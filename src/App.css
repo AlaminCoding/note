@@ -1,38 +1,138 @@
-.App {
-  text-align: center;
+@import url("https://fonts.googleapis.com/css2?family=Signika:wght@300;400&display=swap");
+/* font-family: 'Signika', sans-serif; */
+body {
+  font-family: "Signika", sans-serif;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+header {
+  box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.3);
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
+nav {
+  display: flex !important;
+  justify-content: space-between;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+  height: 80px;
+  width: 100%;
+}
+nav h2 {
+  margin: 0;
+  text-transform: uppercase;
+  font-size: 26px;
+}
+nav ul {
+  list-style: none;
+  display: flex;
+  padding: 0;
+  margin: 0;
+}
+nav ul li {
+  margin-left: 30px;
+  text-transform: uppercase;
+}
+nav ul li a {
+  color: black;
+}
+.add-note {
+  margin-top: 30px;
+}
+.add-note-form {
+  box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.3);
+  border-radius: 4px;
+  padding: 15px 20px 20px 20px;
+}
+.add-note-form h2 {
+  margin-top: 0;
+}
+.add-note-form input {
+  display: block;
+  width: 100%;
+  height: 40px;
+  margin-top: 20px;
+}
+.add-note-form textarea {
+  display: block;
+  width: 100%;
+  height: 100px;
+  margin-top: 20px;
+}
+.add-note-form button {
+  padding: 3px 30px;
+  text-transform: uppercase;
+  font-size: 18px;
+  margin-top: 20px;
+  border: 2px solid rgb(36, 20, 20);
+  font-weight: 400;
+  border-radius: 4px;
+  transition: 0.5s;
+}
+.add-note-form button:hover {
   color: white;
+  background-color: rgb(36, 20, 20);
 }
-
-.App-link {
-  color: #61dafb;
+.note-list {
+  margin-top: 40px;
+  margin-bottom: 50px;
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.single-note {
+  border-radius: 4px;
+  border: 1px solid rgb(36, 20, 20);
+  position: relative;
+  margin-top: 20px;
+}
+.single-note span {
+  position: absolute;
+  top: 8px;
+  left: -15px;
+  background-color: rgb(36, 20, 20);
+  color: white;
+  font-size: 20px;
+  padding: 0px 8px;
+  border-radius: 2px;
+}
+.title-btn {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 8px 5px;
+  border-bottom: 1px solid rgb(36, 20, 20);
+}
+.title-btn h2 {
+  margin: 0;
+  font-size: 24px;
+  margin-left: 20px;
+}
+.btns {
+  display: flex;
+  align-items: center;
+}
+.btns svg {
+  margin-left: 15px;
+  font-size: 20px;
+  color: rgb(36, 20, 20);
+  cursor: pointer;
+}
+.content {
+  padding: 5px 10px 5px 10px;
+}
+.note-title {
+  border-bottom: 1px solid rgb(36, 20, 20);
+  padding-bottom: 10px;
+}
+.note-content {
+  border-bottom: 1px solid rgb(36, 20, 20);
+  padding-bottom: 10px;
+}
+.single-note-btn button {
+  padding: 3px 20px;
+  text-transform: uppercase;
+  font-size: 16px;
+  margin-top: 20px;
+  margin-right: 20px;
+  border: 2px solid rgb(36, 20, 20);
+  font-weight: 400;
+  border-radius: 4px;
+  transition: 0.5s;
+}
+.single-note-btn button:hover {
+  color: white;
+  background-color: rgb(36, 20, 20);
 }
